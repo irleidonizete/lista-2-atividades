@@ -2,14 +2,8 @@ programa
 {
 	
 funcao inicio()
-	{
- franquia 7R$ = 10m3 de água 
- até 10m3 só paga 7 reais
- de 11m3 comeu 30m3 paga +1 real
- de 31 até 100 paga 2 reais
- de 101 em diante paga 5 reais 
-
-		inteiro consumo,franquia,mult,total
+	
+ {inteiro consumo,franquia,mult,total
 
  escreva("qual o consumo de água na residência? ")
 		leia(consumo)
@@ -17,25 +11,23 @@ funcao inicio()
 		franquia=7
 				
 		se (consumo<10){
- escreva ("o consumo foi de: ",consumo", e o valor a ser pago é o de: ",franquia)
+ escreva ("o consumo foi de: ",consumo," e o valor a ser pago é o de: ",franquia)
 		}
 
 		senao se (consumo>=11 e consumo<=30){
 			total=consumo-11 + franquia + 1
- escreva ("o consumo foi de: ",consumo", e o valor a ser pago é o de: ",total)
+ escreva ("o consumo foi de: ",consumo," e o valor a ser pago é o de: ",total)
 		}
 
 		senao se (consumo>=31 e consumo<=100){
 			total=consumo-31 + franquia + 2 
- escreva ("o consumo foi de: ",consumo", e o valor a ser pago é o de: ",total) 
+ escreva ("o consumo foi de: ",consumo," e o valor a ser pago é o de: ",total) 
 		}
 
 		senao se (consumo>=101){
 			total=consumo-101 +franquia + 5
- escreva ("o consumo foi de: ",consumo", e o valor a ser pago é o de: ",total) 
+ escreva ("o consumo foi de: ",consumo," e o valor a ser pago é o de: ",total) 
 		}
-
-		
 
 	}
 }
